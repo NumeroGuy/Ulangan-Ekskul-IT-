@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RafaCoprsHome</title>
+  <link rel="stylesheet" href="UIT.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-name">RAFA <span class="accent">Coprs</span> Website</h1>
+      <p class="site-tag">Welcome to Our Page</p>
+    </div>
+  </header>
+
+  <!-- Navigasi -->
+  <nav class="nav-bar" aria-label="Main navigation">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Service</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Konten Utama -->
+  <main class="main-grid">
+    <!-- About (kiri) -->
+    <section id="about-me" class="card">
+      <h2 class="section-title">About Me</h2>
+      <div class="bio">
+        <p>Hai semua, nama saya Rafa PW. Saya pelajar di SMAN 37 Jakarta. Sekarang saya fokus belajar, mengejar nilai, dan memperdalam ilmu, khususnya teknologi — yang sejak kecil dikenalkan oleh Ayah. Meski ada banyak tantangan, pengalaman seperti pernah memasang file berbahaya mengajari saya pentingnya berhati-hati dan belajar troubleshooting.</p>
+
+        <p>Pernah waktu itu saya tanpa sengaja mengunduh file yang menyamar sebagai game. Dari pengalaman itu saya belajar membersihkan sistem, backup data, dan lebih paham soal risiko download sembarangan. Pengalaman ini justru bikin saya makin tertarik ke keamanan dan perbaikan komputer.</p>
+
+        <p>Selain teknologi, saya juga rutin olahraga supaya seimbang: badminton, sepak bola, berenang, dan lari. Olahraga bantu pikiran tetap fresh biar tetap produktif belajar.</p>
+      </div>
+    </section>
+
+    <!-- Skills (kanan) -->
+    <aside id="skills" class="card">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skill-list">
+        <li>Badminton</li>
+        <li>Sepak Bola</li>
+        <li>Berenang</li>
+        <li>Lari</li>
+        <li>Teknologi (hardware & software)</li>
+        <li>Pemrograman</li>
+        <li>Pengetahuan Umum & Problem Solving</li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Form komentar -->
+  <section class="comment-card">
+    <h2 class="section-title">Tinggalkan Komentar</h2>
+
+    <form id="komentarForm" class="comment-form" action="#" method="post" novalidate>
+      <label for="name">Nama</label>
+      <input type="text" id="name" name="nama" placeholder="Masukan nama anda" required>
+
+      <label for="komentar">Komentar</label>
+      <textarea id="komentar" name="komentar" rows="4" placeholder="Silahkan berikan pesan..." required></textarea>
+
+      <div class="checkbox-row">
+        <input type="checkbox" id="persetujuaninfor" name="persetujuaninfor" value="yes" required>
+        <label for="persetujuaninfor" class="checkbox-label">Saya sudah membaca semua informasi di atas.</label>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn">Kirim</button>
+        <button type="button" id="clearLocal" class="btn secondary">Hapus Riwayat</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer dengan tabel komentar -->
+  <footer class="site-footer">
+    <p class="copyright">&copy; <span id="year"></span> 2025 RAFA Coprs. All rights reserved.</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
